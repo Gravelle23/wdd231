@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 - Web Frontend Development" />
+  <meta name="author" content="Aaron Gravelle" />
+  <title>WDD 231 - Aaron P. Gravelle</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile Picture">
+      <h1>Aaron P. Gravelle</h1>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </div>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+        <li><a href="https://github.com/Gravelle23/wdd231">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/aaron-gravelle2001/">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Course Work</h2>
+      <ul>
+        <li><a href="#">Assignment 1</a></li>
+        <li><a href="#">Assignment 2</a></li>
+        <li><a href="#">Assignment 3</a></li>
+      </ul>
+    </section>
+
+    <div class="card">
+      <h2>Maryland, USA</h2>
+      <img src="images/flag.jpg" alt="Maryland Flag">
+      <p>Maryland Flag</p>
+    </div>
+
+    <section class="certificate card">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filters">
+        <button id="allBtn">All</button>
+        <button id="wddBtn">WDD</button>
+        <button id="cseBtn">CSE</button>
+      </div>
+      <div id="courseContainer" class="courses"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Aaron Preston Gravelle, USA</p>
+    <p id="lastModified">Last modified: </p>
+  </footer>
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</body>
+</html>
