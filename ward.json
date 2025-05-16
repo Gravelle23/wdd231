@@ -1,0 +1,23 @@
+{ 
+    "family_name": "Elizondo",
+    "move_in_date": "2025/05/26",
+    "number_of_people": "3",
+    "visited_by_bishopric": "True",
+    "family_members": [
+        {
+            "name": "Adam",
+            "gender": "Male",
+            "birthdate": "2002/01/29"
+        },
+        {
+            "name": "Sadee",
+            "gender": "Female",
+            "birthdate": "2004/02/03"
+        },
+        {
+            "name": "Adam",
+            "gender": "Male",
+            "birthdate": "2023/08/25"
+        }
+    ]
+}
