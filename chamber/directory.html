@@ -6,10 +6,10 @@
     <meta name="description" content="WDD 231 - Web Frontend Developement I - Chamber of Commerce Web page with company contact info and Buisness Information.">
     <meta name="author" content="Aaron P. Gravelle">
     <title>Southern Maryland Chamber | Directory</title>
-     <meta property="og:title" content="Southern Maryland Chamber Directory" />
-    <meta property="og:description" content="Connect with local businesses in the Southern Maryland area." />
-    <meta property="og:image" content="images/og-preview.png" />
-    <meta property="og:url" content="https://git.io/chamber/directory.html" />
+    <meta property="og:title" content="Southern Maryland Chamber Directory">
+    <meta property="og:description" content="Connect with local businesses in the Southern Maryland area.">
+    <meta property="og:image" content="images/og-preview.png">
+    <meta property="og:url" content="https://git.io/chamber/directory.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -18,27 +18,27 @@
 <body>
 
     <header>
-        <img src="images/favicon.ico" width="34" height="40">
+        <img src="images/favicon.ico" alt="Southern Maryland Chamber Logo" width="34" height="40">
         <span>Southern Maryland Chamber of Commerce</span>
-        <button id="mybutton">&#9776;</button>
+        <button id="mybutton" aria-label="Toggle navigation menu">&#9776;</button>
     </header> 
 
-        <nav>
-            <ul class="menuLinks">
-                <li><a href="WDD231/index.html" title="Home">Home</a></li>
-                <li class="active"><a href="#">Directory</a></li>
-                <li><a href="#" title="Join">Join</a></li>
-                <li><a href="#" title="Discover">Discover</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="menuLinks">
+            <li><a href="WDD231/index.html" title="Home">Home</a></li>
+            <li class="active"><a href="#" aria-current="page">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section class="view-toggle">
+        <section class="view-toggle" aria-label="View toggle buttons">
             <button id="grid-view">Grid View</button>
             <button id="list-view">List View</button>
         </section>
 
-        <section id="cards" class="grid">
+        <section id="cards" class="grid" aria-label="Business directory listings">
 
         </section>
     </main>
