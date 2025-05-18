@@ -1,0 +1,65 @@
+[
+    {
+        "name": "By The Bay Crabbing Co.",
+        "address": "22235 By the Bay Road, Solomons, MD",
+        "phone": "444-444-4444",
+        "website": "bythebaycrabs.com",
+        "image": "favicon3.ico",
+        "membership_level": "3",
+        "description": "Premier provider of fresh Chesapeake Bay crabs."
+    },
+    {
+        "name": "The Blue Ones",
+        "address": "123 piney Lane, Leonardtown, MD",
+        "phone": "444-444-3333",
+        "website": "blueones.com",
+        "image": "favicon8.ico",
+        "membership_level": "2",
+        "description": "Family restaurant known for steamed crabs."
+    },
+    {
+        "name": "Southern Bait House",
+        "address": "2245 crabbing Court, Lexington Park, MD",
+        "phone": "444-414-2222",
+        "website": "southbaithouse.com",
+        "image": "favicon4.ico",
+        "membership_level": "1",
+        "description": "Fishing and crabbing gear for all skill levels."
+    },
+    {
+        "name": "Crab Point Co.",
+        "address": "2345 Ridge Road, Ridge, MD",
+        "phone": "444-414-1111",
+        "website": "crabpoint.com",
+        "image": "favicon5.ico",
+        "membership_level": "2",
+        "description": "Rent boats and crab pots by the hour or day."
+    },
+    {
+        "name": "Bayside Tours",
+        "address": "1234 Mile Road, Lusby, MD",
+        "phone": "444-414-5555",
+        "website": "baysidetours.com",
+        "image": "favicon6.ico",
+        "membership_level": "3",
+        "description": "Guided boat tours and wildlife experiences."
+    },
+    {
+        "name": "Crab Marine Co.",
+        "address": "745 sunnyside Circle, Solomons, MD",
+        "phone": "444-414-6666",
+        "website": "crabmarine.com",
+        "image": "favicon7.ico",
+        "membership_level": "2",
+        "description": "Marine equipment for both commercial and recreational use."
+    },
+    {
+        "name": "Grab Cear",
+        "address": "2165 marylyn Drive, Chesapeake Beach, MD",
+        "phone": "444-414-7777",
+        "website": "bythebaycrabs.com",
+        "image": "favicon9.ico",
+        "membership_level": "1",
+        "description": "Apparel and accessories inspired by Maryland seafood culture."
+    }
+]

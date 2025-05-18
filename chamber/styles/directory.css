@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f3ff;
+    color: #1a237e;
+}
+
+main {
+     font-family: 'Montserrat', Arial, sans-serif;
+}
+
+header {
+    display: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 2rem;
+    background-color: #000;
+    color: white;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    width: 34px;
+    height: 40px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul.menuLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.menuLinks li a {
+    color: red !important;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul.menuLinks li a:hover,
+nav ul.menuLinks li.active a {
+    background-color: #333;
+    color: red;
+}
+
+#mybutton {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0.25rem 2vw;
+}
+
+ul.menuLinks {
+    display: none;
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+.view-toggle {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.view-toggle button {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    border: 1px solid #1a237e;
+    background-color: #f5f3ff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.view-toggle button:hover {
+    background-color: #1a237e;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid section {
+    background-color: #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.grid img {
+    width: auto;
+    height: 75px;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #ddd;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.list img {
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: #bbb;
+}
+
+section h2, section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: #1a237e;
+}
+
+section a {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    text-decoration: underline;
+}
+
+section a:hover {
+    color: #ffeb3b;
+}
+
+footer {
+    background-color: rgba(128,128,128,0.8);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width: 38rem) {
+    #mybutton {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        margin-left: auto;
+    }
+
+    nav ul.menuLinks {
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    nav ul.menuLinks li a {
+        color: red !important;
+        font-weight: bold;
+    }
+}

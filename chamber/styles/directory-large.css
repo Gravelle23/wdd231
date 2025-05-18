@@ -1,0 +1,31 @@
+@media only screen and (min-width: 38rem) {
+    #mybutton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 0;
+        list-style: none;
+        overflow: visible; 
+        white-space: nowrap; 
+    }
+
+    ul.menuLinks li a {
+        padding: 0.5rem 1rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    ul.menuLinks li a:hover {
+        background-color: yellow;
+        color: black;
+    }
+}
