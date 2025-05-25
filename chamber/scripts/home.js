@@ -21,7 +21,7 @@ const SPOTLIGHT_CONTAINER = document.querySelector('#spotlight');
 const CURRENT_WEATHER = document.querySelector('#current-weather');
 const FORECAST = document.querySelector('#forecast');
 
-const myKey = '';
+const myKey = 'b4eef9ff5bbbc0a675dd5b58c1d43737';
 const latitude = 38.30;
 const longitude = -76.51;
 
