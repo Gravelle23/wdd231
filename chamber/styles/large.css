@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+    background-color: transparent;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #0d4d71;
+  }
+
+  nav li a {
+    border: none;
+    padding: 1rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .certificate {
+    grid-column: 1 / -1;
+  }
+
+  .courses {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .course {
+    width: 150px;
+  }
+}
