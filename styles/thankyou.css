@@ -1,0 +1,15 @@
+.confirmation {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background: #e0ffe0;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 0 1rem #ccc;
+}
+.confirmation h2 {
+  color: #2e7d32;
+}
+.confirmation p {
+  margin-bottom: 1rem;
+}

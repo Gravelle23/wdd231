@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Info Form</title>
+</head>
+<body>
+  <h1>User Information Form</h1>
+  <form action="confirmation.html" method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <fieldset>
+      <legend>Subscription Type:</legend>
+      <input type="radio" id="free" name="subscription" value="Free" checked>
+      <label for="free">Free</label>
+      <input type="radio" id="premium" name="subscription" value="Premium">
+      <label for="premium">Premium</label>
+    </fieldset><br>
+
+    <label for="updates">Receive Updates:</label>
+    <input type="checkbox" id="updates" name="updates" value="yes"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

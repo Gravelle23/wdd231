@@ -61,36 +61,50 @@ const courses = [
     }
 ];
 
-const displayCourses = (filter = "all") => {
+const courseDetails = document.getElementById("course-details");
+
+function displayCourseModal(course) {
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+
+  document.getElementById("closeModal").addEventListener("click", () => {
+    courseDetails.close();
+  });
+
+  courseDetails.addEventListener("click", (e) => {
+    if (e.target === courseDetails) {
+      courseDetails.close();
+    }
+  });
+}
+
+function displayCourses(filter = "all") {
   const courseContainer = document.getElementById("courseContainer");
   courseContainer.innerHTML = "";
 
-  let filtered = courses;
+  let filteredCourses = courses;
   if (filter === "wdd") {
-    filtered = courses.filter(c => c.subject === "WDD");
+    filteredCourses = courses.filter(c => c.subject === "WDD");
   } else if (filter === "cse") {
-    filtered = courses.filter(c => c.subject === "CSE");
+    filteredCourses = courses.filter(c => c.subject === "CSE");
   }
 
-  let totalCredits = 0;
-
-  filtered.forEach(course => {
+  filteredCourses.forEach(course => {
     const courseCard = document.createElement("div");
-    courseCard.className = "course-card";
-    courseCard.style.backgroundColor = course.completed ? "#d4edda" : "#f8d7da";
-    courseCard.innerHTML = `
-      <strong>${course.subject} ${course.number}</strong>: ${course.title} - ${course.credits} credits
-      <p>${course.description}</p>
-    `;
+    courseCard.className = "course";
+    courseCard.textContent = `${course.subject} ${course.number}: ${course.title}`;
+    courseCard.addEventListener("click", () => displayCourseModal(course));
     courseContainer.appendChild(courseCard);
-    totalCredits += course.credits;
   });
-
-  const creditTotalEl = document.getElementById("creditTotal");
-  if (creditTotalEl) {
-    creditTotalEl.textContent = `Total Credits: ${totalCredits}`;
-  }
-};
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("allBtn").addEventListener("click", () => displayCourses("all"));
