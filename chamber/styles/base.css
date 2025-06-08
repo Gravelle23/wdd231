@@ -16,6 +16,14 @@ header {
   padding: 1rem;
 }
 
+header img {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -95,11 +103,14 @@ main {
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
+  width: 300px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 2; 
 }
+
+
 
 .filters {
   display: flex;
@@ -141,10 +152,12 @@ main {
 
 footer {
   background-color: #00334d;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  min-height: 132px; 
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
 dialog {
@@ -180,4 +193,16 @@ dialog button {
   color: white;
   cursor: pointer;
   font-weight: bold;
+}
+
+#last-modified {
+  display: inline-block;
+  min-width: 160px; 
+  font-family: monospace;
+}
+
+#year {
+  display: inline-block;
+  min-width: 4ch;
+  font-family: monospace;
 }

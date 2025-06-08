@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  #menu-toggle {
+  .menu-toggle {
     display: block;
   }
 
@@ -20,5 +20,9 @@
 
   nav ul li {
     width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }

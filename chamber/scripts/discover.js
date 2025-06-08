@@ -1,3 +1,12 @@
+const menuButton = document.querySelector('#menu-toggle');
+const navMenu = document.querySelector('#nav-menu');
+
+if (menuButton && navMenu) {
+  menuButton.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+}
+
 const visitDisplay = document.getElementById('visit-message');
 const lastVisit = localStorage.getItem('lastVisit');
 const now = Date.now();
@@ -31,12 +40,17 @@ async function fetchItems() {
 }
 
 function displayCards(items) {
-  items.forEach((item) => {
+  items.forEach((item, index) => {
     const card = document.createElement('section');
     card.classList.add('card');
+    
+    const loadingAttr = index < 2 ? '' : 'loading="lazy"';
+
     card.innerHTML = `
       <h2>${item.name}</h2>
-      <figure><img src="${item.image}" alt="${item.name} image" loading="lazy"></figure>
+      <figure>
+        <img src="${item.image}" alt="${item.name} image" width="300" height="200" ${loadingAttr}>
+      </figure>
       <address>${item.address}</address>
       <p>${item.description}</p>
       <button>Learn More</button>
@@ -46,3 +60,13 @@ function displayCards(items) {
 }
 
 fetchItems();
+
+const lastMod = document.getElementById('last-modified');
+if (lastMod) {
+  lastMod.textContent = document.lastModified;
+}
+
+const year = document.getElementById('year');
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

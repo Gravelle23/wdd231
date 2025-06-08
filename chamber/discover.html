@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 - Web Frontend Development I - Chamber of Commerce Web page with company contact info and business information.">
+  <meta name="author" content="Aaron P. Gravelle">
   <title>Discover | Chamber of Commerce</title>
+  <meta property="og:title" content="Southern Maryland Chamber Discovery">
+  <meta property="og:description" content="Learn about the beautiful places in Southern Maryland.">
+  <meta property="og:image" content="images/favicon1.png">
+  <meta property="og:url" content="https://gravelle23.github.io/wdd231/chamber/discovery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/base.css" />
   <link rel="stylesheet" href="../styles/small.css" />
   <link rel="stylesheet" href="../styles/large.css" />
-  <script defer src="scripts/discover.js"></script>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
-    <img src="images/favicon1.ico" alt="Southern Maryland Chamber Logo" width="34" height="40">
-        <span>Southern Maryland Chamber of Commerce</span>
-    <nav>
+    <img src="images/favicon1.png" alt="Southern Maryland Chamber Logo" width="34" height="34">
+    <h1>Southern Maryland Chamber of Commerce</h1>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <nav class="nav-menu" id="nav-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
@@ -29,12 +39,12 @@
   </main>
 
   <footer>
-     <p>Contact us: info@Southernmdchamber.org | (787)454-0000</p>
-        <p>&copy; <span id="year"></span> | Aaron P. Gravelle | WDD 231</p>
-        <p>Last updated: <span id="last-modified"></span></p>
+    <p>Contact us: info@Southernmdchamber.org | (787) 454-0000</p>
+    <p>&copy; <span id="year"></span> | Aaron P. Gravelle | WDD 231</p>
+    <p>Last updated: <span id="last-modified"></span></p>
   </footer>
 
-  <script src="scripts/join.js">defer</script>
-  <script src="scripts/discover.js">defer</script>
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
 </body>
 </html>
