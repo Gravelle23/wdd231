@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Point Lookout State Park",
+    "address": "11175 Point Lookout Rd, Scotland, MD",
+    "description": "Scenic views, camping, and a Civil War prison museum.",
+    "image": "images/point-lookout.webp"
+  },
+  {
+    "name": "St. Mary's City",
+    "address": "18751 Hogaboom Ln, St Marys City, MD",
+    "description": "A living history museum of Maryland's colonial capital.",
+    "image": "images/st-marys-city.webp"
+  },
+  {
+    "name": "Patuxent River Naval Air Museum",
+    "address": "22156 Three Notch Rd, Lexington Park, MD",
+    "description": "Dedicated to naval aviation history and innovation.",
+    "image": "images/naval-museum.webp"
+  },
+  {
+    "name": "Historic Sotterley",
+    "address": "44300 Sotterley Ln, Hollywood, MD",
+    "description": "Plantation and slave cabin site with educational tours.",
+    "image": "images/sotterley.webp"
+  },
+  {
+    "name": "Elm's Beach Park",
+    "address": "19350 Back Door Rd, Lexington Park, MD",
+    "description": "Quiet beach with family picnic areas and nature walks.",
+    "image": "images/elms-beach.webp"
+  },
+  {
+    "name": "Greenwell State Park",
+    "address": "25420 Rosedale Manor Ln, Hollywood, MD",
+    "description": "Waterfront trails, equestrian areas, and kayaking.",
+    "image": "images/greenwell.webp"
+  },
+  {
+    "name": "Leonardtown Wharf",
+    "address": "22510 Washington St, Leonardtown, MD",
+    "description": "Boardwalk, kayak launches, and local events.",
+    "image": "images/leonardtown-wharf.webp"
+  },
+  {
+    "name": "Calvert Marine Museum",
+    "address": "14200 Solomons Island Rd, Solomons, MD",
+    "description": "Fossils, river otters, and lighthouse history exhibits.",
+    "image": "images/marine-museum.webp"
+  }
+]
