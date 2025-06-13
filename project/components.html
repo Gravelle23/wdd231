@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore key PC components dynamically loaded from data.">
+  <meta name="author" content="Aaron Gravelle" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>PC Components | BeginnerPCBuild</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>BeginnerPCBuild</h1>
+      <nav>
+        <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="build.html">Build Guide</a></li>
+          <li><a href="components.html" class="active">Components</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="form.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Essential PC Components</h2>
+    <section id="parts-container" class="card-grid"></section>
+  </main>
+
+  <dialog id="part-modal">
+    <div id="modal-content">
+      <button id="close-modal" aria-label="Close modal">❌</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-category"></p>
+      <p id="modal-price"></p>
+      <p id="modal-description"></p>
+    </div>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2025 BeginnerPCBuild.com | Created by Aaron Gravelle</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/components.js"></script>
+</body>
+</html>

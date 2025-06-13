@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Beginner PC Build Contact Form" />
+  <meta name="author" content="Aaron Gravelle" />
+  <title>Contact | Beginner PC Build</title>
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+<body>
+  <header>
+    <h1>Beginner PC Build</h1>
+    <nav>
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="build.html">Build Guide</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="form.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="centered">
+    <h2>Contact Us</h2>
+    <form action="thankyou.html" method="get">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="interest">Interest:</label>
+      <select name="interest" id="interest" required>
+        <option value="">Select one</option>
+        <option value="components">PC Components</option>
+        <option value="guides">Step-by-step Guides</option>
+        <option value="troubleshooting">Troubleshooting</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea name="comments" id="comments" rows="4" placeholder="Tell us more..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BeginnerPCBuild.com | <a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
