@@ -3,6 +3,35 @@
     display: block;
   }
 
+  #menu-button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+  .menuLinks {
+   display: none;
+   flex-direction: column;
+   background-color: var(--primary-color);
+   width: 100%;
+   padding: 1rem;
+   position: absolute;
+   top: 60px;
+   left: 0;
+   z-index: 1000;
+}
+
+  .menuLinks.open {
+   display: flex;
+}
+
+  .menuLinks li {
+   margin: 0.5rem 0;
+}
+
   nav ul {
     position: absolute;
     top: 60px;

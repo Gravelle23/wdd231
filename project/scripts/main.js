@@ -12,5 +12,12 @@ const menuLinks = document.querySelector('.menuLinks');
 if (menuButton && menuLinks) {
   menuButton.addEventListener('click', () => {
     menuLinks.classList.toggle('open');
+
+    if (menuLinks.classList.contains('open')) {
+      menuButton.textContent = '✖';
+    } else {
+      menuButton.textContent = '☰';
+    }
   });
 }
+

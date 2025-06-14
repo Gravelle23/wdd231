@@ -3,6 +3,14 @@
     display: none;
   }
 
+  .menuLinks {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
   nav ul {
     display: flex !important;
     flex-direction: row;
