@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Beginner's Guide to Building a PC - Learn the essential parts, how to build a system, and tips for success.">
   <meta name="author" content="Aaron P. Gravelle">
   <meta property="og:title" content="Beginner's Guide to Building a PC">
@@ -10,19 +10,19 @@
   <meta property="og:image" content="https://gravelle23.github.io/wdd231/project/images/pc-hero.png">
   <meta property="og:url" content="https://gravelle23.github.io/wdd231/project/index.html">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <title>Beginner's PC Build Guide | Home</title>
-  <link rel="stylesheet" href="styles/base.css">
+  <title>Beginner's PC Build Guide</title>
+  <link rel="stylesheet" href="styles/base.css" />
   <script defer src="scripts/main.js"></script>
 </head>
 <body>
   <header>
     <h1>Beginner's PC Build Guide</h1>
+    <button id="menu-button" aria-label="Toggle menu">☰</button>
     <nav>
       <ul class="menuLinks">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="build.html">Build Guide</a></li>
-        <li><a href="tips.html">Tips</a></li>
-        <li><a href="form.html">Contact</a></li>
+        <li><a href="build.html">Build & Tips</a></li>
+        <li><a href="form.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -30,12 +30,13 @@
   <main class="centered">
     <h2>Welcome to the Beginner's PC Build Guide</h2>
     <p>This guide will help you understand essential components, build your PC step by step, and troubleshoot common issues.</p>
-    <img src="images/pc-hero.png" alt="High-quality image of a custom-built PC" loading="lazy" width="100%">
+    <img src="images/pc-hero.png" alt="High-quality image of a custom-built PC" loading="lazy" style="max-width:100%; height:auto;" />
     <p id="visit-count"></p>
   </main>
 
   <footer>
-    <p>&copy; 2025 BeginnerPCBuild.com | Created by Aaron P. Gravelle</p>
+    <p>&copy; 2025 BeginnerPCBuild.com | Created by Aaron Gravelle</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
 </body>
 </html>

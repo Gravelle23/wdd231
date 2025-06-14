@@ -14,8 +14,10 @@
 body {
   font-family: var(--body-font);
   background-color: #f7f7f7;
-  color: #1e2a38;
+  color: var(--primary-color);
   line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
 }
 
 header {
@@ -55,12 +57,13 @@ nav a.active {
   color: var(--accent-color);
 }
 
-#menu-toggle {
+#menu-button {
   display: none;
   font-size: 1.5rem;
   background: none;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 main {
@@ -253,19 +256,38 @@ main h2 {
 }
 
 @media (max-width: 768px) {
-  #menu-toggle {
+  #menu-button {
     display: block;
   }
 
   nav ul {
+    position: absolute;
+    top: 60px; /* Adjust depending on header height */
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
     display: none;
     flex-direction: column;
-    background-color: var(--primary-color);
     padding: 1rem;
-    margin-top: 0.5rem;
+    z-index: 1000;
   }
 
   nav ul.open {
     display: flex;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+
+@media (min-width: 769px) {
+  #menu-button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
   }
 }

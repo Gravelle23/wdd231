@@ -1,24 +1,16 @@
-const toggleButton = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
-toggleButton.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-const lastModified = document.getElementById('last-modified');
-if (lastModified) {
-  lastModified.textContent = document.lastModified;
+const visitDisplay = document.getElementById("visit-count");
+if (visitDisplay) {
+  let count = Number(localStorage.getItem("visitCount")) || 0;
+  count++;
+  localStorage.setItem("visitCount", count);
+  visitDisplay.textContent = `You have visited this page ${count} time(s).`;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const visitDisplay = document.querySelector("#visit-count");
+const menuButton = document.querySelector('#menu-button');
+const menuLinks = document.querySelector('.menuLinks');
 
-  let count = Number(localStorage.getItem("visit-count")) || 0;
-  count++;
-  localStorage.setItem("visit-count", count);
-
-  if (visitDisplay) {
-    visitDisplay.textContent = `You've visited this page ${count} time${count === 1 ? '' : 's'}.`;
-  }
-});
-
+if (menuButton && menuLinks) {
+  menuButton.addEventListener('click', () => {
+    menuLinks.classList.toggle('open');
+  });
+}

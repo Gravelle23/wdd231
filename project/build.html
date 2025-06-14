@@ -2,32 +2,33 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Step-by-step PC build guide for beginners.">
-  <meta name="author" content="Aaron Gravelle">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="icon" href="images/favicon.ico">
-  <title>Build Guide | BeginnerPCBuild</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PC Build Guide and Troubleshooting Tips for Beginners.">
+  <meta name="author" content="Aaron P. Gravelle">
+  <meta property="og:title" content="Beginner's PC Build Guide">
+  <meta property="og:description" content="Step-by-step guide and tips for building your first PC.">
+  <meta property="og:image" content="https://gravelle23.github.io/wdd231/project/images/pc-hero.png">
+  <meta property="og:url" content="https://gravelle23.github.io/wdd231/project/build.html">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Build & Tips | BeginnerPCBuild</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <h1>BeginnerPCBuild</h1>
-      <nav>
-        <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <ul id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="build.html" class="active">Build Guide</a></li>
-          <li><a href="components.html">Components</a></li>
-          <li><a href="tips.html">Tips</a></li>
-          <li><a href="form.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Beginner's PC Build Guide</h1>
+    <button id="menu-button" aria-label="Toggle menu">☰</button>
+    <nav>
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="build.html" class="active">Build & Tips</a></li>
+        <li><a href="form.html">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h2>PC Build Steps</h2>
+  <main class="centered">
+    <h2>Step-by-Step Build Guide</h2>
 
     <div class="step-card">
       <h3>Step 1: Prepare Your Workspace</h3>
@@ -73,13 +74,55 @@
       <h3>Step 9: Install Operating System</h3>
       <p>Use a USB or disc to install Windows or your preferred OS.</p>
     </div>
+
+    <h2>Troubleshooting Tips</h2>
+
+    <div class="tip-card">
+      <h3>Double-check All Power Connections</h3>
+      <p>Ensure your 8-pin CPU and 24-pin motherboard power cables are properly connected.</p>
+    </div>
+    <div class="tip-card">
+      <h3>No Display on First Boot?</h3>
+      <p>Make sure your monitor is plugged into the GPU, not the motherboard port.</p>
+    </div>
+    <div class="tip-card">
+      <h3>RAM Not Detected?</h3>
+      <p>Try reseating the RAM and using the correct slots (usually 2 and 4).</p>
+    </div>
+    <div class="tip-card">
+      <h3>PC Not Turning On?</h3>
+      <p>Double-check your PSU switch and front-panel connectors.</p>
+    </div>
+    <div class="tip-card">
+      <h3>Stay Grounded</h3>
+      <p>Prevent static damage by touching grounded metal before handling components.</p>
+    </div>
+    <div class="tip-card">
+      <h3>BIOS Update</h3>
+      <p>Sometimes required for newer CPUs on older motherboards — check the manufacturer’s site.</p>
+    </div>
+
+    <h2>Explore Components</h2>
+    <section id="parts-container" class="card-grid"></section>
+
+    <dialog id="part-modal">
+      <div id="modal-content">
+      <button id="close-modal" aria-label="Close modal">❌</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-category"></p>
+      <p id="modal-price"></p>
+      <p id="modal-description"></p>
+      </div>
+    </dialog>
+
   </main>
 
-  <footer>
+ <footer>
     <p>&copy; 2025 BeginnerPCBuild.com | Created by Aaron Gravelle</p>
     <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/components.js"></script>
+
 </body>
 </html>
