@@ -26,6 +26,12 @@ header {
   padding: 1rem;
 }
 
+.site-title {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  color: white;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
