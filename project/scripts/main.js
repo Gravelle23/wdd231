@@ -21,3 +21,9 @@ if (menuButton && menuLinks) {
   });
 }
 
+const lastModified = document.getElementById("last-modified");
+if (lastModified) {
+  lastModified.textContent = document.lastModified;
+}
+  
+
